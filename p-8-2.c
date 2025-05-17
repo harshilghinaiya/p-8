@@ -12,7 +12,7 @@ void har(int *ptr, int size)
 
 int main() 
 {
-    int size;
+    int s;
     printf("Enter array's s: ");
     scanf("%d", &s);
 
@@ -20,7 +20,7 @@ int main()
 
 
     printf("Enter array elements:\n");
-    for (int i = 0; i < s i++) {
+    for (int i = 0; i < s; i++) {
         for (int j = 0; j < s; j++) {
             printf("a[%d][%d] = ", i, j);
             scanf("%d", &a[i][j]);
@@ -29,7 +29,7 @@ int main()
 
 
     printf("har of all elements:\n");
-    cubeArray(&a[0][0], s);
+    har(&a[0][0], s);
 
 
 
