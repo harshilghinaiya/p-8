@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-void cubeArray(int *ptr, int size)
+void har(int *ptr, int size)
 {
     for (int i = 0; i < size * size; i++) 
 	{
@@ -13,23 +13,34 @@ void cubeArray(int *ptr, int size)
 int main() 
 {
     int size;
-    printf("Enter array's size: ");
-    scanf("%d", &size);
+    printf("Enter array's s: ");
+    scanf("%d", &s);
 
-    int a[size][size];
+    int a[s][s];
 
 
     printf("Enter array elements:\n");
-    for (int i = 0; i < size; i++) {
-        for (int j = 0; j < size; j++) {
+    for (int i = 0; i < s i++) {
+        for (int j = 0; j < s; j++) {
             printf("a[%d][%d] = ", i, j);
             scanf("%d", &a[i][j]);
         }
     }
 
 
-    printf("Cubes of all elements:\n");
-    cubeArray(&a[0][0], size);
+    printf("har of all elements:\n");
+    cubeArray(&a[0][0], s);
+
 
 
 }
+/*
+Enter array's s: 2
+Enter array elements:
+a[0][0] = 3
+a[0][1] = 2
+a[1][0] = 5
+a[1][1] = 4
+har of all elements:
+27      8       125     64
+*/
